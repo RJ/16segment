@@ -114,7 +114,7 @@ font = generate_font(fontmap)
 def print_ascii_as_16seg(s):
     codes = str_to_codes(s)
     print_asciiart_from_codes(codes)
-    print s + " --> ",
+    print "CODES:",
     for c in codes:
         print c,
     sys.stdout.write("\n")
@@ -146,6 +146,9 @@ def print_all_chars():
         tmp = tmp + k
         i = i + 1
         if(i % 10 == 0):
+            for character in tmp:
+                sys.stdout.write("  " + character + "  " + " ")
+            sys.stdout.write("\n")
             print_ascii_as_16seg(tmp)
             sys.stdout.write("\n")
             tmp = ""
@@ -162,5 +165,8 @@ if __name__ == "__main__":
         if(line == "..."):
             print_all_chars()
         else:
+            for character in line:
+                sys.stdout.write("  " + character + "  " + " ")
+            sys.stdout.write("\n")
             print_ascii_as_16seg(line)
         sys.stdout.write("\n")
