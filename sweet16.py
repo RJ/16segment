@@ -60,7 +60,7 @@ fontmap = {
     '5': "abchinop",
     '6': "abchijnop",
     '7': "abfk",
-    '8': "ancghijnop",
+    '8': "abncghijnop",
     '9': "abcghinop",
     '<': "fm",
     '>': "dk",
