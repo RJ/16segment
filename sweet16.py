@@ -159,7 +159,7 @@ if __name__ == "__main__":
     ks = font.keys()
     ks.sort()
     while True:
-        line = raw_input("String>  ")
+        line = raw_input("String>  ").upper()
         if line == "":
             sys.exit(0)
         if(line == "..."):
